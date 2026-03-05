@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #ffffff;
+
+  --primary: #0070f3;
+  --primary-foreground: #ffffff;
+
+  --secondary: #1e293b;
+  --secondary-foreground: #ffffff;
+
+  --muted: #64748b;
+  --muted-foreground: #94a3b8;
+
+  --accent: #38bdf8;
+  --accent-foreground: #020617;
+
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #0070f3;
+
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: radial-gradient(circle at 15% 15%, rgba(0, 112, 243, 0.08) 0%, transparent 60%),
+      radial-gradient(circle at 85% 85%, rgba(0, 112, 243, 0.08) 0%, transparent 60%),
+      radial-gradient(rgba(255, 255, 255, 0.06) 1.2px, transparent 1.2px);
+    background-size: 100% 100%, 100% 100%, 32px 32px;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
