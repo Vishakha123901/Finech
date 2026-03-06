@@ -30,7 +30,7 @@ export function SecurityCompliance() {
     ];
 
     return (
-        <section className="relative w-full bg-white py-16 sm:py-24 overflow-hidden border-t border-gray-100">
+        <section id="security" className="relative w-full bg-white py-16 sm:py-24 overflow-hidden border-t border-gray-100">
             <div className="mx-auto max-w-6xl px-6 lg:px-8">
 
                 {/* Header */}

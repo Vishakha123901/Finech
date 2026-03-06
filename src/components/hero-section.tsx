@@ -7,7 +7,7 @@ export function HeroSection() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <main className="flex-1 relative flex items-center min-h-screen py-24 md:py-12 lg:py-0 mt-20 md:mt-0"
+    <main id="hero" className="flex-1 relative flex items-center min-h-screen py-24 md:py-12 lg:py-0 mt-20 md:mt-0"
       style={{
         backgroundImage: 'url(/hero-background.jpg)',
         backgroundSize: 'cover',
@@ -55,7 +55,7 @@ export function HeroSection() {
               <button
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
-                className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-2.5 sm:py-2 text-[13px] font-semibold text-white transition-all hover:bg-blue-700 whitespace-nowrap active:scale-95 active:shadow-inner"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-6 py-2.5 sm:py-2 text-[13px] font-semibold text-white transition-all duration-300 hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg whitespace-nowrap active:scale-95"
               >
                 Talk to Sales
                 <MoveRight className="h-4 w-4" />

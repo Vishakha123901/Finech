@@ -12,7 +12,7 @@ interface TestimonialCardProps {
 
 function TestimonialCard({ quote, author, role, logoText, dark = false }: TestimonialCardProps) {
     return (
-        <div className={`rounded-3xl px-7 py-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex flex-col justify-between flex-shrink-0 w-full min-h-[300px] ${dark ? 'bg-[#111111] text-white' : 'bg-white text-gray-900'}`}>
+        <div className={`rounded-3xl px-7 py-12 shadow-[0_8px_30px_rgb(0,0,0,0.06)] flex flex-col justify-between flex-shrink-0 w-full min-h-[300px] animate-on-scroll ${dark ? 'bg-[#111111] text-white' : 'bg-white text-gray-900'}`}>
             <p className={`text-base sm:text-lg font-medium leading-relaxed mb-10 ${dark ? 'text-gray-100' : 'text-gray-800'}`}>
                 &quot;{quote}&quot;
             </p>
@@ -55,7 +55,7 @@ const col3Cards = [
 
 export function SuccessStories() {
     return (
-        <section className="relative w-full bg-[#f8fafc] py-20 sm:py-32 border-t border-gray-100 overflow-hidden">
+        <section id="testimonials" className="relative w-full bg-[#f8fafc] py-20 sm:py-32 border-t border-gray-100 overflow-hidden">
             {/* Dotted background pattern */}
             <div className="absolute inset-0 z-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#CBD5E1 2px, transparent 2px)', backgroundSize: '40px 40px' }} />
 
@@ -133,7 +133,7 @@ export function SuccessStories() {
 
                     {/* Floating Explore Button - Centered at bottom */}
                     <div className="relative md:absolute md:-bottom-6 left-0 md:left-1/2 md:-translate-x-1/2 z-30 mt-8 md:mt-0 flex justify-center">
-                        <button className="bg-[#0066FF] hover:bg-blue-600 text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all shadow-xl flex items-center justify-center gap-2 whitespace-nowrap">
+                        <button className="bg-[#0066FF] text-white px-8 py-3.5 rounded-full font-bold text-sm transition-all duration-300 hover:bg-white hover:text-[#0066FF] hover:scale-105 shadow-xl flex items-center justify-center gap-2 whitespace-nowrap">
                             Explore Case Studies
                             <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
                         </button>

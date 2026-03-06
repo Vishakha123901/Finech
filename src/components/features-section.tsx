@@ -9,7 +9,7 @@ export function FeaturesSection() {
     const [activeSecurityCard, setActiveSecurityCard] = useState<number | null>(0);
 
     return (
-        <section className="relative w-full bg-white py-16 sm:py-24 overflow-hidden">
+        <section id="features" className="relative w-full bg-white py-16 sm:py-24 overflow-hidden">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="mx-auto max-w-2xl text-center mb-10 sm:mb-12">
@@ -28,7 +28,7 @@ export function FeaturesSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
 
                     {/* 1. Global Payments Card */}
-                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col">
+                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col animate-on-scroll stagger-1">
                         {/* Dotted background pattern */}
                         <div className="absolute inset-0 z-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#d1d5db 2px, transparent 2px)', backgroundSize: '32px 32px' }} />
 
@@ -90,7 +90,7 @@ export function FeaturesSection() {
                     </div>
 
                     {/* 2. Banking as a Service Card */}
-                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col">
+                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col animate-on-scroll stagger-2">
                         {/* Dotted background pattern */}
                         <div className="absolute inset-0 z-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#d1d5db 2px, transparent 2px)', backgroundSize: '32px 32px' }} />
 
@@ -225,7 +225,7 @@ export function FeaturesSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 mt-4 sm:mt-6">
 
                     {/* 3. Scalability Card */}
-                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col">
+                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col animate-on-scroll stagger-3">
                         {/* Dotted background pattern */}
                         <div className="absolute inset-0 z-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#d1d5db 2px, transparent 2px)', backgroundSize: '32px 32px' }} />
 
@@ -278,7 +278,7 @@ export function FeaturesSection() {
                     </div>
 
                     {/* 4. Compliance & Security Card */}
-                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col">
+                    <div className="bg-white rounded-[24px] border border-gray-100 p-5 sm:p-6 lg:p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] relative overflow-hidden flex flex-col animate-on-scroll stagger-4">
                         {/* Dotted background pattern */}
                         <div className="absolute inset-0 z-0 opacity-40" style={{ backgroundImage: 'radial-gradient(#d1d5db 2px, transparent 2px)', backgroundSize: '32px 32px' }} />
 

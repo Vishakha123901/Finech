@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export function IndustrySolutions() {
     return (
-        <section className="relative w-full bg-[#0a0f1c] pt-20 pb-32 sm:pt-32 sm:pb-40 overflow-hidden">
+        <section id="solutions" className="relative w-full bg-[#0a0f1c] pt-20 pb-32 sm:pt-32 sm:pb-40 overflow-hidden">
             {/* Dark background with dots */}
             <div className="absolute inset-0 z-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
 
@@ -35,7 +35,7 @@ export function IndustrySolutions() {
                         { title: 'For Fintech Startups', desc: 'Build your own banking solutions with ease', icon: Landmark },
                         { title: 'For Enterprises', desc: 'Custom financial solutions to optimize operations at scale', icon: Building },
                     ].map((item, i) => (
-                        <div key={i} className="bg-[#1a202c] rounded-2xl p-6 flex flex-col items-center sm:items-start text-center sm:text-left border border-white/5 hover:border-white/10 transition-colors">
+                        <div key={i} className={`bg-[#1a202c] rounded-2xl p-6 flex flex-col items-center sm:items-start text-center sm:text-left border border-white/5 hover:border-white/10 transition-colors animate-on-scroll stagger-${i + 1}`}>
                             <div className="h-48 w-full bg-[#353f50] rounded-xl mb-6 flex items-center justify-center">
                                 <item.icon className="h-12 w-12 text-white/90" strokeWidth={1.5} />
                             </div>
@@ -59,7 +59,7 @@ export function IndustrySolutions() {
                             Integrate Finech effortlessly with our developer-friendly APIs, designed for speed, security, and scalability.
                         </p>
 
-                        <button className="bg-[#0066FF] text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-blue-600 transition-colors flex items-center gap-2 mb-12 w-fit">
+                        <button className="bg-[#0066FF] text-white px-6 py-3 rounded-full font-semibold text-sm transition-all duration-300 hover:bg-white hover:text-[#0066FF] hover:scale-105 flex items-center gap-2 mb-12 w-fit">
                             Explore API Docs
                             <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
                         </button>

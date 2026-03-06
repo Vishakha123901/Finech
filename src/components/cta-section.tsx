@@ -4,7 +4,7 @@ import { Mail, ArrowRight } from "lucide-react";
 
 export function CtaSection() {
     return (
-        <section className="relative w-full bg-black overflow-hidden">
+        <section id="contact" className="relative w-full bg-black overflow-hidden">
 
             {/* ─── TOP CTA BLOCK ─── */}
             <div
@@ -74,7 +74,7 @@ export function CtaSection() {
                             className="hidden sm:block flex-1 text-sm text-gray-800 placeholder-gray-400 bg-transparent focus:outline-none font-medium"
                         />
 
-                        <button className="bg-[#0066FF] hover:bg-blue-700 text-white text-sm font-bold rounded-full px-6 py-3 sm:py-2.5 flex items-center justify-center gap-2 whitespace-nowrap transition-colors duration-200 flex-shrink-0 shadow-lg sm:shadow-none">
+                        <button className="bg-[#0066FF] hover:bg-blue-700 text-white text-sm font-bold rounded-full px-6 py-3 sm:py-2.5 flex items-center justify-center gap-2 whitespace-nowrap transition-all duration-300 hover:bg-white hover:text-blue-600 hover:scale-105 flex-shrink-0 shadow-lg sm:shadow-none">
                             Talk to Sales
                             <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
                         </button>

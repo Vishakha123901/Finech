@@ -5,11 +5,11 @@ import Link from "next/link";
 import { MoveUpRight, Menu, X } from "lucide-react";
 
 const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "Solutions", href: "#" },
-    { name: "Integrations", href: "#" },
-    { name: "Pricing", href: "#" },
-    { name: "Resources", href: "#" },
+    { name: "Home", href: "#hero" },
+    { name: "Features", href: "#features" },
+    { name: "Solutions", href: "#solutions" },
+    { name: "Pricing", href: "#pricing" },
+    { name: "Contact", href: "#contact" },
 ];
 
 export function Navbar() {
@@ -61,7 +61,7 @@ export function Navbar() {
                     </Link>
                     <Link
                         href="#"
-                        className="flex items-center gap-1 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-all hover:bg-blue-500 hover:shadow-[0_0_15px_rgba(37,99,235,0.4)]"
+                        className="flex items-center gap-1 rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-white hover:text-blue-600 hover:scale-105 hover:shadow-lg"
                     >
                         Get Started
                         <MoveUpRight className="h-4 w-4" />
@@ -110,7 +110,7 @@ export function Navbar() {
                             <Link
                                 href="#"
                                 onClick={() => setMobileMenuOpen(false)}
-                                className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-base font-semibold text-white transition-all hover:bg-blue-500"
+                                className="flex items-center justify-center gap-2 rounded-lg bg-blue-600 px-4 py-3 text-base font-semibold text-white transition-all duration-300 hover:bg-white hover:text-blue-600 hover:scale-105"
                             >
                                 Get Started
                                 <MoveUpRight className="h-4 w-4" />
