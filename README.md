@@ -86,7 +86,6 @@ finech/
 │   │   └── footer.tsx              # Footer with links
 │   ├── utils/                 # Utility functions
 │   │   └── cn.ts             # Class name utility
-│   ├── types/                # TypeScript type definitions
 │   └── image/                # Source images
 │       ├── hero-section background.jpg
 │       └── cta-background.jpg
