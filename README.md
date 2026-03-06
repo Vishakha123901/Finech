@@ -84,11 +84,8 @@ finech/
 │   │   ├── pricing-section.tsx     # Pricing plans
 │   │   ├── cta-section.tsx         # Call-to-action section
 │   │   └── footer.tsx              # Footer with links
-│   ├── utils/                 # Utility functions
-│   │   └── cn.ts             # Class name utility
-│   └── image/                # Source images
-│       ├── hero-section background.jpg
-│       └── cta-background.jpg
+│   └── utils/                 # Utility functions
+│       └── cn.ts             # Class name utility
 ├── public/                   # Static assets
 │   ├── hero-background.jpg   # Hero section background
 │   └── cta-background.jpg    # CTA section background
@@ -96,7 +93,7 @@ finech/
 ├── node_modules/           # Dependencies
 ├── package.json           # Project dependencies
 ├── tsconfig.json         # TypeScript configuration
-├── tailwind.config.ts   # Tailwind CSS configuration
+├── postcss.config.mjs    # PostCSS configuration
 ├── next.config.ts      # Next.js configuration
 └── README.md          # Project documentation
 ```
