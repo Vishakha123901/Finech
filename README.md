@@ -2,6 +2,12 @@
 
 A modern, responsive financial services platform built with Next.js, featuring payment processing, banking services, and comprehensive financial solutions.
 
+## Live Demo
+
+🚀 **Live Site**: [https://finech.netlify.app/](https://finech.netlify.app/)
+
+📦 **GitHub Repository**: [https://github.com/Vishakha123901/Finech](https://github.com/Vishakha123901/Finech)
+
 ## Project Overview
 
 Finech is a comprehensive financial infrastructure platform designed to empower businesses with seamless payment processing, multi-currency support, and banking-as-a-service capabilities. The platform provides a clean, intuitive interface for managing financial operations at scale.
